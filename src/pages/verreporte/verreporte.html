@@ -1,0 +1,30 @@
+<!--
+  Generated template for the VerreportePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+    <!-- <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button> -->
+
+
+    <ion-title>Ver Reporte</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p> <b ion-text color="primary">Usuario:&nbsp;</b>    {{ verUsu }}   </p>
+  <p> <b ion-text color="primary">Direccion:&nbsp;</b>  {{ verDirec }} </p>
+  <p> <b ion-text color="primary">Creado:&nbsp;</b>     {{ verFecha }} </p>
+  <img [src]="base64Image" *ngIf="base64Image" />
+  <p>{{ verReporte }}</p>
+
+</ion-content>
